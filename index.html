@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Cleo Dixon, Tashiek Abdul">
+    <meta name="keywords" content="game, number, guessing">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>A Game of Chance</title>
+    <link rel="shortcut icon" href="../assets/images/icons8-corn-16.png" type="image/x-icon">
+</head>
+    <body>
+        <a href="storyboard.html"><img class="logo" src="../assets/images/icons8-corn-16.png" alt="storyboard" /></a>
+    
+        <div id="formbody">
+            <div class="container">
+                <form id="form">
+                    <fieldset>
+                        <div>
+                            <h1 id="heading">Game of Chance</h1>
+                        </div>
+            
+                        <h2 class="glow">Sign Up </h2>
+    
+                        <div>
+                            <label for="username">Username</label>
+                            <input type="text" name="username" id="username" placeholder="John Doe" minlength="3" required class="input"/>
+                            
+                            <span id="error1" class="errormsg"></span>
+                        </div>
+    
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" pattern=".+@gmail.com" placeholder="yourname@gmail.com" required class="input"/><br/>
+                            <span id="error2" class="errormsg"></span>
+                        </div>
+           
+                        <div>
+                            <label for="dob">Date Of Birth</label>          
+                            <input type="date" name="dob" id="dob" min="1932-12-31" max="2017-03-31" required oninput="ageCalculator()" class="input"/><br/>
+                            <span id="error3" class="errormsg"></span>
+                            
+                        </div>
+    
+                        <div>
+                            <label for="age" class="required">Age</label>
+                            <input type="text" id="age" name="age" class="input" disabled required>
+
+                            <div class="gender">
+                                <label class="required">Gender</label>
+                                <input type="radio" name="gender" id="male" value="M" class="male"  checked="checked"/><b>M</b> 
+                                <input type="radio" name="gender" id="female" value="F" class="female"/><b>F</b> 
+                            </div>
+                        </div>
+
+    
+                        <div class="rqbtn">
+                            <button id="quit" disabled  onclick="quitnow()">Quit</button>
+                            <button type="submit" id="submit" onclick="register()">Register</button>
+                        </div>
+                            
+                        <br/>
+                        <div class="board">
+                            <table>
+                                <tr>
+                                    <th id="playerscore" class="player">  Score</th>
+                                    <th id="player" class="player">Players</th>
+                                </tr>
+                                <tr>
+                                    <td><textarea name="player" id="showpercentage" cols="30" rows="10" disabled></textarea></td>
+                                    <td><textarea name="player" id="showallplayers"  cols="30" rows="10" disabled></textarea></td>
+                                    
+                                </tr>
+                            </table>
+                        </div>
+    
+                    </fieldset>
+                    <br/>
+                    <div class="gamebutton">
+                        <button type="button" name="play" id="play" class="play" disabled onclick="playGame()">Play</button>
+                        <button type="reset" name="results" id="results" disabled onclick="resultnow()">Results</button>
+                    </div>
+                </form>
+                <div>   
+                    <footer>
+                        <h4 class="copyright"> Copyright &copy; Tashiek Abdul & Cleo Dixon, Date: April 13,2022</h4>
+                    </footer>
+                </div>
+        </div>
+        </div>
+        <div id="gamebody" hidden>
+            <p class="greet" id="greet"></p>
+            <p class="notice1" id="notice1"></p>
+            <p class="notice2" id="notice2"></p>
+            <br/>
+            <div class="resultParas">
+                <p class="guesses" id="guesses"></p>
+                <div class="background" id="background"><p class="lastResult" id="lastResult"></p></div>
+            </div>
+
+            <div class="form">
+
+                <div class="gamebtns">
+                    <div class="form">
+                        <input type="number" id="guessnum" class="guessnum" autocomplete="off"><br/>
+                        <button type="submit"  class="guessbtn" id="guessbtn">GUESS</button>
+                    </div>
+                    <div class="sidebtn">
+                        <button class="retrybtn" id="retrybtn" name="PlayAgain" onclick="playGame()" type="reset">Retry</button>
+                        <button class="quitbtn" id="quitbtn" onclick="quit()"> Quit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+     <br/>
+        <script src="script1.js"></script>
+    </body>
+</html>

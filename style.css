@@ -1,0 +1,578 @@
+body{
+    background-color: rgb(230, 230, 250);
+    display:flex; 
+    flex-direction:column;
+}
+
+fieldset {
+    background-color: rgb(245, 222, 179, 0.3);
+    text-align: left;
+    padding:0px 50px 50px 50px ;
+    width: 50%;
+    height:1050px;
+    border-width: 0;
+    border-radius: 10px;
+    display: inline-block;    
+}
+
+label {
+    width: 30%;
+    display: inline-block;
+    text-align: left;
+    margin: 10px 10px 20px 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color:rgb(3, 3, 3);
+}
+
+legend{
+    text-align: center;
+    border: 2px;
+    border-radius: 6px;
+    color:rgb(0, 0, 0);
+    font-size: 2.5vw;
+    font-family:'Times New Roman', Times, serif;
+    text-shadow: -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255), -1px 1px 0 rgb(255, 255, 255);
+
+}
+
+h2{
+    text-align: center;
+    color: black;
+    font-size: 3.5vw;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+b{
+    font-size: 2vw;
+    font-weight: 300;
+}
+
+textarea{
+    background-color: rgb(230, 230, 250, 0.3);
+    color: rgb(0, 0, 0); 
+    border-radius: 15px;
+    border-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 175px;
+    resize: none;
+    scroll-behavior:smooth;
+    font-size: 25px;
+}
+
+
+table{
+    width: 500px;
+    margin: 0;
+}
+
+td{
+    padding: 10px;
+}
+input{
+    padding: .75vw .5vw .75vw .5vw;
+    margin: 1vw 1vw 1vw 0;
+    color: rgb(25, 14, 168);
+    border-radius: 5px;
+    border-width: 2px;
+    width: 58%;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+span{
+    margin-left: 150px;
+}
+
+input::placeholder{
+    color: rgb(25, 14, 168, 0.5);
+    font-style: italic;
+
+}
+
+input[type=radio]{
+    height: 20px;
+}
+
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+input:focus{
+    background-color: lavender;
+}
+
+input[type=submit]:hover{
+    box-shadow: 0px 0px 15px rebeccapurple;
+    border: none;
+    background-color: blue;
+    color: rgb(255, 255, 255);
+}
+
+input:disabled{
+    background-color: rgba(207, 207, 207, 0.5);
+}
+input:invalid{
+    border: 1px red;
+}
+
+input:valid{
+    border: 1px black;
+}
+
+@keyframes animate {
+    0% {
+    text-shadow: 0 0 1px rgb(235, 197, 247), 0 0 5px rgb(236, 165, 253), 0 0 5px rgb(61, 15, 228),
+     0 0 10px rgb(61, 15, 228), 0 0 10px rgb(61, 15, 228), 0 0 15px rgb(61, 15, 228),
+     0 0 15px rgb(251, 148, 255);
+}
+100% {
+    filter: 0 0 1px rgb(195, 0, 255) ,0 0 5px blue, 0 0 5px rgb(89, 53, 219) ,
+    0 0 10px rgb(89, 53, 219) , 0 0 10px rgb(89, 53, 219) ,0 0 15px rgb(89, 53, 219) ,
+    0 0 15px rgb(89, 53, 219) , 0 0 20px rgb(89, 53, 219) ;
+
+}
+    
+}
+
+
+button{
+    width: 200px;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+button:hover{
+    background-color: blue;
+    color: white;
+    box-shadow: 0px 0px 15px rebeccapurple;
+    border: none;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+
+}
+
+li {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.copyright{
+    text-align: center;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+.story{
+    font-weight: bold;
+    font-size:25px ;
+    
+}
+
+.button{
+    padding: 15px;
+    position: relative;
+    height: 60px;
+}
+
+.rqbtn{
+    height: 100px;
+    margin-bottom: 20px;
+}
+.gender{
+    margin: 0 0 20px 0;
+    width: 50%;
+    float: right;
+}
+.success-icon,
+.failure-icon {
+  right: 0;
+  opacity: 0;
+}
+.failure-icon,
+.error {
+  color: red;
+}
+
+.success-icon {
+  color: green;
+}
+
+.error {
+  font-size: 14.5px;
+  margin-top: 5px;
+}
+.image {
+    height: 70vh;
+  }
+.container{
+    background: url(../assets/images/corn3.png);
+    width: 700px;
+    height: 625px;
+    margin: 50px auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0 0 100px 0;
+}
+
+.sidebtn{
+    margin: 20px 0 0 0;
+    width: 100%;
+    
+}
+
+.retrybtn{
+    width: 45%;
+    font-size: 3vw;
+    font-weight: 700;
+    height: 5%;
+    border-radius: 15px;
+    background-color: thistle;
+    margin: 20px 3% 30px 0;
+}
+.quitbtn{
+    width: 45%;
+    font-size: 3vw;
+    font-weight: 700;
+    height: 5%;
+    border-radius: 15px;
+}
+.guessbtn{
+    width: 95%;
+    font-size: 5vw;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 15px;
+    letter-spacing: 7.5px;
+    cursor: pointer;
+    padding: 2px 0 2px 3px;
+}
+.guessbtn:disabled{
+    background-color: rgb(151, 144, 144, 0.5);
+    box-shadow: none;
+    max-height: fit-content;
+
+}
+.guessbtn:disabled:hover{
+    background-color: rgb(128, 128, 128, 0.3);
+    box-shadow: none;
+    cursor: not-allowed;
+    padding: 3px;
+    height: 60%;
+
+}
+.gamebtns{
+    margin: auto;
+    width: 50%;
+    border:5px #083d77 ;
+    padding: 0;
+}
+.greet{
+    font-size: 3.5vw;
+    font-style: normal;
+    text-align: center;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    margin: auto;
+    text-shadow: -1px -1px 0 white, 1px -1px 0 black, -1px 1px 0 black;
+
+}
+
+.resultParas{
+    margin-top: 0;
+}
+.gameinput{
+    width: 38%;
+margin: 20px;
+}
+.info{
+    margin: 0 0 20px 0;
+}
+
+.gamebutton{
+    padding: 30px;
+    margin: auto;
+    height: auto;
+}
+
+.board{
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+
+.errormsg{
+    color: red;
+    font-weight: 700;
+    padding-left: 30px;
+    text-shadow: -1px -1px 0 white, 1px -1px 0 rgb(255, 255, 255), -1px 1px 0 rgb(255, 255, 255);
+
+}
+.glow{
+    color: black;
+}
+
+    /*this allows the text to glow for the specified areas.
+    input in the class/id that glow effect should be attacted to.
+    {
+    animation-name: animate;
+    animation-duration: 0.9s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;}*/
+
+.form{
+    width: 100%;
+}
+.retry{
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    float: right;   
+}
+
+.retry:hover{
+    background-color: thistle;
+    box-shadow: none;
+    color: black;
+}
+
+.guesses{
+    margin: 10px, 0, 0 ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    font-size: 3vw;
+    text-align: center;
+    letter-spacing: 10px;
+    color: #083d77;
+    text-shadow: -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(255, 255, 255);
+
+}
+/*animation-name: animate;
+animation-duration: 1s;
+animation-direction: alternate;
+animation-iteration-count: infinite;*/
+
+.notice1{
+    padding: 10px;
+    margin: 20px 0 10px;
+    font-weight: 700;
+    font-size: 2vw;
+    letter-spacing: .5vw;
+    width: 90%;
+    float: left;
+    text-shadow: -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0);
+    color: #ffffff;
+    text-align: center;
+}
+
+.notice2{
+    text-shadow: -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0);
+    color: #ffffff;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2vw;
+    letter-spacing: .5vw;
+
+}
+.lastResult{
+    padding: 5px 0 10px 0;
+    color: white;
+    font-size: 2.5vw;
+    padding: 20px;
+    font-weight: 900;
+    letter-spacing: 1vw;
+    text-shadow: -1px -1px 0 white, 1px -1px 0 black, -1px 1px 0 black;
+    text-align: center;
+
+}
+
+.player{
+    padding: 10px 0 20px ;
+    font-weight: 1000;
+    font-style:oblique;
+    text-align: center;
+    text-shadow: -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255), -1px 1px 0 rgb(255, 255, 255);
+    font-size: 2vw;
+}
+
+.background{
+    margin-top: 20px;
+    height: auto;
+    border-radius: 8px;
+    padding: 0;
+}
+.logo{
+    width: 30px;
+}
+
+
+
+#body{
+    background-color: #408181;
+}
+
+#heading,#storyb{
+    text-align: center;
+    border: 2px;
+    border-radius: 6px;
+    color:rgb(0, 0, 0);
+    font-size: 55px;
+    font-family:'Times New Roman', Times, serif;
+    text-shadow: -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255), -1px 1px 0 rgb(255, 255, 255);
+
+}
+
+#age{
+    width: 40px;
+    text-align: center;
+    height: 20px;
+}
+
+#gamebody{
+    width: 50%;
+    background-color: rgba(248, 156, 150);
+    border-radius: 20px;
+    padding: 20px;
+    height: 80%;
+    margin: auto;
+}
+
+#guessnum{
+    width: 90%;
+    height: 25%;
+    border-radius: 20px;
+    font-size: 5vw;
+    text-align: center;
+    background-color: aliceblue;
+    color: purple;
+    font-weight: 700;
+    margin: 0 10px 40px 0;
+    
+
+}
+
+#submit{
+    float: right;
+    background-color: rgb(170, 33, 33);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    width: 200px;
+    padding: 20px;
+    margin: 10px 0px 0 0;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+}
+
+#submit:disabled{
+    font-size: 30px;
+    background-color: rgba(252, 252, 252, 0.3);
+    box-shadow: none;
+    cursor: not-allowed;
+}
+
+#submit:hover{
+    font-size: 30px;
+
+}
+
+#male{
+    width: 30px;
+}
+
+#female{
+    width: 30px;
+}
+#play{
+    margin: 20px 50px;
+    width: 240px;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 30px;
+}
+
+#play:hover{
+    font-size: 40px;
+}
+#play:disabled:hover{
+    font-size: 30px;
+    background-color: rgb(128, 128, 128, 0.3);
+    box-shadow: none;
+    cursor: not-allowed;
+
+}
+
+#error1{
+    display:inline-block;
+}
+#results{
+    width: 240px;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 30px;
+    margin: auto;
+}
+
+#results:hover{
+    font-size: 40px;
+}
+
+#results:disabled:hover{
+    font-size: 30px;
+    background-color: rgb(128, 128, 128, 0.3);
+    box-shadow: none;
+    cursor: not-allowed;
+}
+
+#quit{
+    margin: 10px 60px 0 0;
+    font-size: 2.5vw;
+    font-weight: bold;
+    width: 45%;
+    padding: 20px;
+    text-shadow: -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255), -1px 1px 0 rgb(255, 255, 255);
+}
+
+#quit:hover{
+    font-size: 30px;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+
+}
+
+#quit:disabled{
+    font-size: 30px;
+    background-color: rgb(128, 128, 128, 0.5);
+    box-shadow: none;
+    cursor: not-allowed;
+    color: white;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+
+}
+
+#quit:disabled:hover{
+    font-size: 30px;
+    background-color: rgb(128, 128, 128, 0.3);
+    box-shadow: none;
+    cursor: not-allowed;
+
+}
+
+#error{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    color: red;
+    margin: 10px 0 10px 20px;
+    padding: 20px 0 20px 0;
+}
+#contain{
+    width: 85% ;
+    text-align: justify;
+    margin-left: 10px;
+}
+
